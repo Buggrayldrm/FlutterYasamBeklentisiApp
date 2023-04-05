@@ -17,15 +17,17 @@ class ResultPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
-              flex: 8,
-              child: Center(
-                  child: Text(
-                Hesap(userData: userData).hesaplama().round().toString(),
+            flex: 8,
+            child: Center(
+              child: Text(
+                "Beklenen Yaşam Süreniz\n                ${Hesap(userData: userData).hesaplama().round().toString()} Gün.",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
-              ))),
+              ),
+            ),
+          ),
           Expanded(
               flex: 1,
               child: TextButton(
